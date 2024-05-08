@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <link rel="stylesheet" href="./style.css">
+
+</head>
+<body class="bg-dark">
+
+    <div class="container">
+        <div class="row">
+            <div class="col-md-4"></div>
+            <div class="col-md-4">
+                <div class="calculator">
+                    <div class="head">
+                        <h1 class="text-light">Calculator</h1>
+                    </div>
+                    <div class="d-flex">
+                        <div class="input p-2 border">
+                            <input type="text" class="mt-1" id="result" placeholder="0" size="33" readonly>
+                        </div>
+                        <div class="ac-btn p-2 border ">
+                            <button type="button" onclick="clearAll()" class="btn default text-danger ms-2">AC</button>
+                        </div>
+                    </div>
+                    <div class="d-flex">
+                        <div class="num-btn p-2 border ">
+                            <button type="button" onclick="display('7')" class="btn default">7</button>
+                        </div>
+                        <div class="num-btn p-2 border ">
+                            <button type="button" onclick="display('8')" class="btn default">8</button>
+                        </div>
+                        <div class="num-btn p-2 border ">
+                            <button type="button" onclick="display('9')" class="btn default">9</button>
+                        </div>
+                        <div class="symbol-btn p-2 border">
+                            <button type="button" onclick="display('/')" class="btn default">/</button>
+                        </div>
+                    </div>
+                    <div class="d-flex">
+                        <div class="num-btn p-2 border ">
+                            <button type="button" onclick="display('4')" class="btn default">4</button>
+                        </div>
+                        <div class="num-btn p-2 border ">
+                            <button type="button" onclick="display('5')" class="btn default">5</button>
+                        </div>
+                        <div class="num-btn p-2 border ">
+                            <button type="button" onclick="display('6')" class="btn default">6</button>
+                        </div>
+                        <div class="symbol-btn p-2 border ">
+                            <button type="button" onclick="display('*')" class="btn default">*</button>
+                        </div>
+                    </div>
+                    <div class="d-flex">
+                        <div class="num-btn p-2 border ">
+                            <button type="button" onclick="display('1')" class="btn default">1</button>
+                        </div>
+                        <div class="num-btn p-2 border ">
+                            <button type="button" onclick="display('2')" class="btn default">2</button>
+                        </div>
+                        <div class="num-btn p-2 border ">
+                            <button type="button" onclick="display('3')" class="btn default">3</button>
+                        </div>
+                        <div class="symbol-btn p-2 border ">
+                            <button type="button" onclick="display('-')" class="btn default">-</button>
+                        </div>
+                    </div>
+                    <div class="d-flex">
+                        <div class="num-btn p-2 border ">
+                            <button type="button" onclick="display('0')" class="btn default">0</button>
+                        </div>
+                        <div class="num-btn p-2 border ">
+                            <button type="button" onclick="display('.')" class="btn default">.</button>
+                        </div>
+                        <div class="symbol-btn p-2 border ">
+                            <button type="button" onclick="equal()" class="btn default">=</button>
+                        </div>
+                        <div class="symbol-btn p-2 border ">
+                            <button type="button" onclick="display('+')" class="btn default">+</button>
+                        </div>
+                    </div>
+                    <div class="d-flex">
+                        <div class="num-btn p-2 border ">
+                            <button type="button"onclick="back()" class="btn default">Back</button>
+                        </div>
+                        <div class="num-btn p-2 border-bottom ">
+                        </div>
+                        <div class="num-btn p-2 border-bottom ">
+                        </div>
+                        <div class="num-btn p-2 border-bottom border-end ">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4"></div>
+        </div>
+    </div>
+</body>
+<script src="./calculator.js"></script>
+</html>

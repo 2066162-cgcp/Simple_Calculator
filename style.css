@@ -1,0 +1,44 @@
+.head{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.calculator{
+    margin-top: 25%;
+}
+.input{
+    margin-top: 25px;
+    width: 75%;
+}
+.input input{
+    text-align: right;
+}
+.ac-btn{
+    margin-top: 25px;
+    width: 25%;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.num-btn{
+    width: 25%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.num-btn button{
+    color: white;
+}
+.symbol-btn{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 25%;
+}
+.symbol-btn button{
+    color: yellow;
+}
+.ac-btn .num-btn .symbol-btn:hover{
+
+}
